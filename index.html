@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>The Chitram - The place you can find movie details in one click</title>
+<meta name="viewport" content = "width = device-width, initial-scale = 1.0, user-scalable=no">
+<link rel="icon" type="image/gif/png" href="logo_icon.ico">
+<link rel="stylesheet" href="index.css"></link>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-sm shadow-sm p-1 mb-5 bg-white rounded">
+<a class="navbar-brand mx-auto"><img src="logo.png" class="image-fluid image-responsive center-block" width="160" height="50"></a>
+</nav>
+<div class="container-fluid">
+
+<div class="row content">
+<h1 class="display-3 mx-auto">Hello,</h1>
+</div>
+<div class="row content">
+<h1 class="display-4 mx-auto ">Do you want to find movie details with just one click?</h1> 
+</div>
+<div class="row mb-5 content">
+<h1 class="display-4 mx-auto">Oh yes!, you are on the right track.</h1> 
+</div>
+
+<div class="row ml-5 d-flex flex-direction-column searchBy">
+
+  <div class="col-md-2  dropdown ">
+  <button class="btn btn-dark dropdown-toggle mb-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Search by
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item selected" id="button1">Title</a>
+    <a class="dropdown-item " id="button2">Imdb Id</a>
+    <a class="dropdown-item" id="button3">Title and year</a>
+    
+  </div>
+  </div>
+
+  <div class="col-md-7 ">
+  <input class="form-control input-lg" type="text" placeholder="Enter the Title..." id="title"></br>
+  <input class="form-control input-lg mb-2" type="text" placeholder="Enter the Year..." id="year">
+  </div>
+
+  <div class="col-md-1 ">
+  <span class="input-group-btn">
+  <button class="btn btn-default bg-warning" type="button" id="searchButton">Search</i></button>
+  </span>
+  </div>
+
+</div>
+
+ <div class="row " id= "nomovie">
+   <div class="col d-flex justify-content-center">
+	<h1 class="text-danger">Movie not Found</h1>
+   </div>
+ </div>
+ <div class="row" id="loading">
+	<div class="col d-flex justify-content-center">
+	   <img src="loading.gif" class="image-fluid image-responsive ">
+	</div>
+ </div>
+
+ <div class="row" id="timeout1">
+	<div class="col d-flex justify-content-center">
+	   <h1>Request Timed out</h1>
+	</div>
+ </div>
+
+</div>
+<div class="details"> 
+<hr>
+<div class="container shadow-sm p-1 mt-5 mb-5 bg-white rounded ">
+
+  <div class="row ml-2 " >
+    <div class="col-auto">
+	<img src="" class="image-responsive image-fluid poster d-flex justify-content-center flex-direction-column ml-2 poster" width="200" height="200">
+    </div>
+
+    <div class="col-auto movieTitle mr-auto">
+	<h1>Title</h1>
+	<img src="clock.jpg" class="runtime">
+    </div>
+  
+    <div class="col-auto ratings">
+	<img src="imdb.jpg" class="mb-2 imdbRating" width="40" height="40"><br>
+	<img src="rottentomatos.png" class="mb-2 rotten" width="60" height="40" ><br>
+	<img src="metacitric.png" class="mb-2 metacitric" width="60" height="40" >
+    </div>
+
+  </div>
+</div>
+
+	<div class="container shadow-sm p-1 mt-5 mb-5 bg-white rounded story ">
+	<h4></h4>
+	</div>
+
+	<div class="container shadow-sm p-1 mt-5 mb-5 bg-white rounded ">
+	<div class="row  "><div class="col  my-3 "><h3>Details</h3></div></div>
+
+	<div class="row">
+	<div class="col production"><h4 style="display:inline">Production:</h4></div>
+	</div>
+
+	<div class="row">
+		<div class="col director "><h4></h4></div>
+	</div>
+	<div class="row">
+		<div class="col writer "><h4></h4></div>
+	</div>
+	<div class="row">
+	<div class="col actors "><h4></h4></div>
+	</div>
+	
+	<div class="row">
+	<div class="col boxoffice "><h4></h4></div>
+	</div>
+
+	<div class="row">
+	<div class="col dvd "><h4></h4></div>
+	</div>
+
+	<div class="row">
+	<div class="col awards "><h4></h4></div>
+	</div>
+
+	<div class="row">
+	<div class="col website"><h4></h4></div>
+	</div>
+
+	<div class="row">
+	<div class="col IMDBid"><h4></h4></div>
+	</div>
+
+	</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
+

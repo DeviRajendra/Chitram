@@ -1,0 +1,28 @@
+.root{
+	font-size:16px;
+}
+
+#year{
+	display:none;
+}
+
+#loading{
+	display:none;
+}
+
+#timeout1{
+	display:none;
+}
+
+#nomovie{
+	display:none;
+}
+
+
+.details{
+	display:none;
+}
+
+.border{
+	
+}
